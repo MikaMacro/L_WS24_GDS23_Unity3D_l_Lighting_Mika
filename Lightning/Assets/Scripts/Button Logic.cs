@@ -11,21 +11,22 @@ using UnityEngine.UI;
 
 public class ButtonLogic : MonoBehaviour
 {
-    public TMP_InputField inputField;
+    public TMP_InputField inputField; //was hole ich mir
     public void SaveData()
     {
         
-        PlayerPrefs.SetString("Input", inputField.text);
+        PlayerPrefs.SetString("Input", inputField.text); //speichert text
         
     }
     public void LoadData()
     {
-        PlayerPrefs.GetString("Input");
+        //print(PlayerPrefs.GetString("Input")); //läst ihn neu laden
+        inputField.text = PlayerPrefs.GetString("Input");
     }
     public void DeleteData()
     {
-        PlayerPrefs.DeleteKey("Input");
-        inputField.text = string.Empty;
+        PlayerPrefs.DeleteKey("Input"); //löscht alles
+        inputField.text = string.Empty; // + löscht nur text
         //PlayerPrefs.DeleteAll();
     }
 }
