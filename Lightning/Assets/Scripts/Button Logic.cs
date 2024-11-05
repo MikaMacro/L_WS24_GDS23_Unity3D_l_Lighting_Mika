@@ -7,16 +7,17 @@ using UnityEngine.UI;
 
 //Implementieren von den Methoden (Save, Load, Delete (cleart UI und PlayerPrefs)) mit Playerprefs + verknüpfen
 // Set = save, Get = load, Delete = löschen
-//
+//Man kann nur float strings und ints speichern, eine bool kann man mit true oder false schreiben 
 
 public class ButtonLogic : MonoBehaviour
 {
     public TMP_InputField inputField; //was hole ich mir
     public void SaveData()
+
     {
         
         PlayerPrefs.SetString("Input", inputField.text); //speichert text
-        
+        PlayerPrefs.Save();
     }
     public void LoadData()
     {
@@ -29,6 +30,8 @@ public class ButtonLogic : MonoBehaviour
         inputField.text = string.Empty; // + löscht nur text
         //PlayerPrefs.DeleteAll();
     }
+
+    
 }
 
 
