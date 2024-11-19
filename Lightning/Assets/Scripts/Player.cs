@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject player; // Gameobject für den player machen
 
-    public void Save()
+    public void Save() //saved
     {
-        PlayerPrefs.SetFloat("PositionX", player.transform.position.x);
+        PlayerPrefs.SetFloat("PositionX", player.transform.position.x); //bestimmt + gibt namen der positionen
         PlayerPrefs.SetFloat("PositionY", player.transform.position.y);
         PlayerPrefs.SetFloat("PositionZ", player.transform.position.z);
     }
-    public void Load()
+    public void Load() // läd  
     {
         Vector3 XYZ = new Vector3(PlayerPrefs.GetFloat("PositionX"), PlayerPrefs.GetFloat("PositionY"), PlayerPrefs.GetFloat("PositionZ"));
-        player.transform.position = XYZ;
+        //Auf Vector 3 ist (name) XYZ genauso wie, eine float für X Y und Z 
+        player.transform.position = XYZ; //sagt, das es für die XYZ achse gilt 
     }
 
 }
