@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class RandomFarbe : MonoBehaviour
 {
-    void Start()
+    private Farben farben;
+
+    private void Awake() //Initialisieren
     {
-        GetComponent<MeshRenderer>().material.color = Random.ColorHSV();
+        farben = GameObject.Find("Logic").GetComponent<Farben>();
+    }
+    void Start() //passiert beim start
+    {
+        GetComponent<MeshRenderer>().material.color = Random.ColorHSV(); //gibt eine random color
 
     }
-    private void OnMouseDown()
+    private void OnMouseDown() // passiert ab anklicken der maus
     {
-        print(GetComponent<MeshRenderer>().material.color);
+        farben.AddColorToList(GetComponent<MeshRenderer>().material.color); //rufen vom anderen script die void ab und das ist diese farbe
+        //print(GetComponent<MeshRenderer>().material.color); //Die farbe
+        Destroy(gameObject); // Das zerstört 
     }
+    
+    
+  
+    
 }
