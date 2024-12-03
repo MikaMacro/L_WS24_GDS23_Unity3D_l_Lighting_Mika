@@ -7,6 +7,7 @@ TagManager:
   - Sphere
   - MyCube
   - Item
+  - Apple
   layers:
   - Default
   - TransparentFX

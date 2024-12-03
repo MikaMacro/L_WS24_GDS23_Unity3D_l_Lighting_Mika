@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Lightning.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/DoneScreen.unity
+    guid: 047444b8f8dafb54e8c18054eaf1bfad
+  - enabled: 1
+    path: Assets/Scenes/AppelUebung.unity
+    guid: 9ca10133aa0dc5e4297fe5a77feef34c
   m_configObjects: {}
