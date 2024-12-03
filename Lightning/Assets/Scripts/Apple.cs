@@ -14,4 +14,5 @@ public class Apple : MonoBehaviour
         GetComponent<MeshRenderer>().material.color = Random.ColorHSV(); //gibt eine random color
 
     }
+    
 }

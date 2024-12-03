@@ -8,6 +8,8 @@ TagManager:
   - MyCube
   - Item
   - Apple
+  - Basket
+  - AppleManager
   layers:
   - Default
   - TransparentFX

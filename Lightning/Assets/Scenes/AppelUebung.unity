@@ -797,6 +797,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0411e31f46b71f643bf79b12c662f301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timetime: {fileID: 590544556}
+  numberItemsToCollect: 8
+  points: {fileID: 1180139696}
 --- !u!4 &1086465530
 Transform:
   m_ObjectHideFlags: 0
@@ -1522,6 +1525,11 @@ PrefabInstance:
     - target: {fileID: 8434959564697808690, guid: ca8d5e8e70c3b0140a326bbcdb8cee9e,
         type: 3}
       propertyPath: m_Name
+      value: Basket
+      objectReference: {fileID: 0}
+    - target: {fileID: 8434959564697808690, guid: ca8d5e8e70c3b0140a326bbcdb8cee9e,
+        type: 3}
+      propertyPath: m_TagString
       value: Basket
       objectReference: {fileID: 0}
     - target: {fileID: 9098731004635968904, guid: ca8d5e8e70c3b0140a326bbcdb8cee9e,
