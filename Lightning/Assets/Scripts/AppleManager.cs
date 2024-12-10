@@ -32,6 +32,6 @@ public class AppleManager : MonoBehaviour
         time = Time.time;
         timetime.text = time.ToString();
         }
-    }
+    } // If highscore time == höher also dann time.time schreiben
    
 }
