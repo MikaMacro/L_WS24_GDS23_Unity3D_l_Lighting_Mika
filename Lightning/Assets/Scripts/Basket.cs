@@ -17,7 +17,12 @@ public class Basket : MonoBehaviour
         {
             Destroy(collision.gameObject);
             appleManager.numberToCollect--;
-            
+            if (appleManager.numberToCollect == 0)
+            {
+                appleManager.DoneScreen.SetActive(true);
+
+            }
+
             appleManager.points.text = appleManager.numberToCollect.ToString();
         }
     }
