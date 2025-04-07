@@ -14,7 +14,7 @@ public class Items : MonoBehaviour
         if (collision.gameObject.CompareTag("Item"))
         {
           Destroy(collision.gameObject);
-        explodison.Play();
+          explodison.Play();
         } 
     }
 }
